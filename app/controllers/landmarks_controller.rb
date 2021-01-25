@@ -4,4 +4,6 @@ class LandmarksController < ApplicationController
     @figures = Figure.all
     erb :'/landmarks/index'
   end
+
+
 end
