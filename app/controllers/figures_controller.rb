@@ -34,7 +34,7 @@ class FiguresController < ApplicationController
   end
 
   patch '/figures/:id' do
-    @figure = Figure.find_by_id(:id)
+    @figure = Figure.find_by_id(params[:id])
     @figure.update(params[:figure])
     unless params[:title][:name].empty?
       @figure.titles << Title.create(params[:title])
