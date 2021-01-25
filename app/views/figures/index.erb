@@ -2,7 +2,7 @@
 
 <% @figures.each do |figure| %>
   <li> <a href="/figures/<%= figure.id %>"> <%= figure.name %> </a></li>
-  <li align="center"><%= figure.year_completed %></li>
+
 <% end %>
 <a class="button" href="figures/new">Create New Figure</a>
 <a class="button" href="/landmarks">Landmark</a>
